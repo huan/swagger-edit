@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "docker build . -t zixia/swagger-edit:test",
+    "edit": "docker run -ti --rm --volume=\"$(pwd)\":/swagger -p 8080:8080 zixia/swagger-edit",
     "start": "node index.js",
     "postinstall": "ln -s .. node_modules/serve-swagger-editor/node_modules",
     "test": "echo tested"

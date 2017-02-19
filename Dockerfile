@@ -2,7 +2,7 @@ FROM mhart/alpine-node
 MAINTAINER Zhuohuan LI <zixia@zixia.net>
 
 RUN apk update \
-  && apk add bash \
+  && apk add bash curl \
   && rm -rf /var/cache/apk/* \
   && rm -rf /tmp/*
 

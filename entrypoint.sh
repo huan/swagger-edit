@@ -23,4 +23,5 @@ if [ ! -e "$swaggerFile" ]; then
   usage
 fi
 
+export WAN_IP=$(curl -s ifconfig.io) || '127.0.0.1'
 npm start "$swaggerFile"

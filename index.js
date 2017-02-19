@@ -16,5 +16,12 @@ server.on('request', function (req, res) {
 });
 
 server.listen(8080, function () {
-	console.log(server.address());
+  console.log('Docker listen on port: ' + server.address().port);
+	console.log('Please open http://ip:port to edit your swagger specification file')
+  console.log(`Some possible urls:
+              http://${process.env['WAN_IP']}
+              http://${process.env['WAN_IP']}:8080
+              http://localhost
+              http://localhost:8080
+  `)
 });
