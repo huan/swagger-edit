@@ -1,0 +1,30 @@
+{
+  "name": "swagger-edit",
+  "version": "0.0.1",
+  "description": "open/edit/save a local swagger file",
+  "main": "index.js",
+  "scripts": {
+    "build": "docker build . -t zixia/swagger-edit:test",
+    "start": "node index.js",
+    "postinstall": "ln -s .. node_modules/serve-swagger-editor/node_modules",
+    "test": "echo tested"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zixia/swagger-edit.git"
+  },
+  "keywords": [
+    "swagger",
+    "edit",
+    "local"
+  ],
+  "author": "Huan LI <zixia@zixia.net>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/zixia/swagger-edit/issues"
+  },
+  "homepage": "https://github.com/zixia/swagger-edit#readme",
+  "dependencies": {
+    "serve-swagger-editor": "^1.0.1"
+  }
+}
