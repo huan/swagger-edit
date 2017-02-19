@@ -1,4 +1,6 @@
 # swagger-edit
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/zixia/swagger-edit.svg)](https://greenkeeper.io/)
 Open, Edit and Save a Local Swagger File
 
 [![dockeri.co](http://dockeri.co/image/zixia/swagger-edit)](https://hub.docker.com/r/zixia/swagger-edit/)
