@@ -32,6 +32,16 @@ Then open your browser and goto the URL: <http://127.0.0.1:8080/>, that's it.
 
 Hope you like it!
 
+## Tips
+
+For more convenience, we can setup a function as a command:
+
+```shell
+$ function swagger-edit() {
+  docker run -ti --rm --volume=\"$(pwd)\":/swagger -p 8080:8080 zixia/swagger-edit "$@"
+}
+```
+
 Author
 -----------------
 Zhuohuan LI <zixia@zixia.net> (http://linkedin.com/in/zixia)
