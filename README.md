@@ -22,7 +22,7 @@ That will be cool, also very convienence.
 
 Use [Swagger-Edit](http://hub.docker.com/r/zixia/swagger-edit) docker image!
 
-To edit your my-api.yaml, just run:
+To edit your `my-api.yaml`, just run:
 
 ```shell
 $ docker run -ti --rm --volume=\"$(pwd)\":/swagger -p 8080:8080 zixia/swagger-edit my-api.yaml
