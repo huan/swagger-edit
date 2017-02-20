@@ -25,7 +25,7 @@ Use [Swagger-Edit](http://hub.docker.com/r/zixia/swagger-edit) docker image!
 To edit your `my-api.yaml`, just run:
 
 ```shell
-$ docker run -ti --rm --volume=\"$(pwd)\":/swagger -p 8080:8080 zixia/swagger-edit my-api.yaml
+$ docker run -ti --rm --volume="$(pwd)":/swagger -p 8080:8080 zixia/swagger-edit my-api.yaml
 ```
 
 Then open your browser and goto the URL: <http://127.0.0.1:8080/>, that's it.
@@ -38,7 +38,7 @@ For more convenience, we can setup a function as a command:
 
 ```shell
 $ function swagger-edit() {
-  docker run -ti --rm --volume=\"$(pwd)\":/swagger -p 8080:8080 zixia/swagger-edit "$@"
+  docker run -ti --rm --volume="$(pwd)":/swagger -p 8080:8080 zixia/swagger-edit "$@"
 }
 ```
 
