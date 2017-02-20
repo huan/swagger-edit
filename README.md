@@ -34,12 +34,14 @@ Hope you like it!
 
 ## Tips
 
-For more convenience, we can setup a function as a command:
+For more convenience, we can setup a function as a command(in bash):
 
-```shell
+```bash
 $ function swagger-edit() {
   docker run -ti --rm --volume="$(pwd)":/swagger -p 8080:8080 zixia/swagger-edit "$@"
 }
+
+$ swagger-edit my-api.yaml
 ```
 
 Author
@@ -52,6 +54,6 @@ Zhuohuan LI <zixia@zixia.net> (http://linkedin.com/in/zixia)
 
 Copyright & License
 -------------------
-* Code & Documentation 2015© zixia
+* Code & Documentation 2017© zixia
 * Code released under the Apache 2.0 license
 * Docs released under Creative Commons
